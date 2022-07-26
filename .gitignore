@@ -50,7 +50,7 @@ qtcreator-*
 # Catkin custom files
 CATKIN_IGNORE
 
-husky_navigation/
-ros_essentials_cpp/
-velodyne_simulator/
-virtual_maize_field/
+src/husky_navigation/
+src/ros_essentials_cpp/
+src/velodyne_simulator/
+src/virtual_maize_field/
