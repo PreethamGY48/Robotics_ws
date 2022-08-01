@@ -28,16 +28,16 @@ def move():
 			pub.publish(vel_msg)
 			break
 		elif keyPressed=='w':
-			vel_msg.linear.x = vel_msg.linear.x + 0.01
+			vel_msg.linear.x = vel_msg.linear.x + 0.05 
 
 		elif keyPressed=='a':
-			vel_msg.angular.z = vel_msg.angular.z + 0.01
+			vel_msg.angular.z = vel_msg.angular.z + 0.05
 
 		elif keyPressed=='s':
-			vel_msg.linear.x = vel_msg.linear.x - 0.01
+			vel_msg.linear.x = vel_msg.linear.x - 0.05
 
 		elif keyPressed=='d':
-			vel_msg.angular.z = vel_msg.angular.z + 0.01
+			vel_msg.angular.z = vel_msg.angular.z + 0.05
 
 		elif keyPressed=='x':
 			stop(vel_msg)

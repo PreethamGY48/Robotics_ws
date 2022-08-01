@@ -16,7 +16,14 @@
 		<!-- Atom -->
 		<include>
 			<uri>model://atom</uri>
-		</include>
+		</include>	
+
+		<!-- Atom -->
+		<include>
+			<uri>model://maize_01</uri>
+			<static>true</static>
+			<pose>0 0 5 0 0 0</pose>
+		</include>	
 
 		<!-- World camera -->
 		<gui fullscreen='0'>
@@ -25,5 +32,7 @@
 				<view_controller>orbit</view_controller>
 			</camera>
 		</gui>
+
+		
 	</world>
 </sdf>
