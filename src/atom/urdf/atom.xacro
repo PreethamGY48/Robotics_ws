@@ -259,8 +259,37 @@
 		</collision>
 	</link>
 
+	<!-- Hokuyo Lidar -->
+	<link name="hokuyo2">
+		<inertial>
+			<mass value="${hokoyu_mass}"/>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+
+			<inertia
+		        ixx="1e-6" ixy="0.0" ixz="0.0"
+		        iyy="1e-6" iyz="0.0"
+		        izz="1e-6"
+		      />
+		</inertial>
+
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<mesh filename="package://atom/meshes/hokuyo.dae"/>
+			</geometry>
+		</visual>
+
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.1 0.1 0.1"/>
+			</geometry>
+		</collision>
+	</link>
+
 	<!-- Project center to the ground -->
 	<link name="robot_footprint"></link>
+
 
 
 <!-- Give the base link a unique name -->
